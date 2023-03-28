@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+body {
+    font-size: 1.6em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu, ol, ul {
+    padding-left: 0;
+}
+
+label, button, select, summary, [type=radio], [type=submit], [type=checkbox] {
+    cursor: pointer;
+}
+
+a {
+    /* Places underlines below the descenders */
+    text-underline-position: under;
+    /* Sets the thickness as a percentage of the font size */
+    text-decoration-thickness: 8;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
